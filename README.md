@@ -1,10 +1,10 @@
 # vf3lib
-vf3lib is a software library containing all the currently published versions of VF3, the fastest algorithm to solve subgraph isomorphism on large and dense graphs. *Extremely efficient in time and memory!* 
+vf3lib is a software library containing all the currently published versions of VF3, the fastest algorithm to solve subgraph isomorphism on large and dense graphs. *Extremely efficient in time and memory!*
 
 This library, written in C++11, contains the official implementations of VF2-Plus, VF3, VF3L, VF3P realized by the authors.
 The latest version of vf3lib includes new graph loaders and the parallel versions of VF3L (VF3P), designed to effectively speed-up the algorithm on multicore architectures.
 
-The library is allows to solve: 
+The library is allows to solve:
 * Graph Isomorphism
 * Subgraph Isomorphism, also knwon as **node-induced**
 * Monomorphism (Non-induced subgraph isomorphism), also known as **edge-induced**
@@ -22,9 +22,9 @@ If you use VF3 please don't forget to cite us!
 The provided Makefile will produce three different executables:
 - VF3: The algorith whit all the heuristics
 - VF3L: A lightweight version, where the look-ahead is deactivated. This version fit for sparse or small graphs.
-- VF3P: A parallel version of VF3L, to be used when the problem is really hard! 
+- VF3P: A parallel version of VF3L, to be used when the problem is really hard!
 
-If you wish to use the sequential version of VF (VF3 or VF3L) execute the following commandline: 
+If you wish to use the sequential version of VF (VF3 or VF3L) execute the following commandline:
 
 > vf3 [pattern] [target]
 
@@ -87,10 +87,10 @@ An example, represented in hexadecimal, follows:
 01 00     Number of edges out of node 2 (1)
 00 00     Target of the first (and only) edge of node 2 (edge 2 -> 0)
 ```
-    
+
 ### Text
 On the first line there must be the number of nodes; subsequent lines will contain the node attributes, one node per line, preceded by the node id; node ids must be in the range from 0 to the number of nodes - 1.
-Then, for each node there is the number of edges coming out of the node, followed by a line for each edge containing the ids of the edge ends and the edge attribute. 
+Then, for each node there is the number of edges coming out of the node, followed by a line for each edge containing the ids of the edge ends and the edge attribute.
 Blank lines, are ignored. The graph file can start with comments. They must start with "#", those lines are ignored.
 An example file, where both node and edge attributes are ints, could be the following:
 
@@ -101,7 +101,7 @@ An example file, where both node and edge attributes are ints, could be the foll
 # Node attributes
 0 27
 1 42
-2 13	 
+2 13
 
 # Edges coming out of node 0\n
 2
@@ -115,3 +115,6 @@ An example file, where both node and edge attributes are ints, could be the foll
 # Edges coming out of node 2
 0
 ```
+
+
+testing
