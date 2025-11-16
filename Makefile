@@ -1,6 +1,6 @@
 CC=g++
 CFLAGS= -std=c++11 -Wno-deprecated -O2
-LDFLAGSPAR = -pthread -lpthread
+LDFLAGSPAR = -pthread -lpthread -latomic
 LDFLAGS=
 CPPFLAGS= -I./include
 
@@ -14,7 +14,6 @@ vf3l:
 
 vf3p:
 	$(CC) $(CFLAGS) $(CPPFLAGS) -o bin/$@ main.cpp -DVF3P $(LDFLAGSPAR)
-	$(CC) $(CFLAGS) $(CPPFLAGS) -o bin/$@_bio main.cpp -DVF3BIO -DVF3P $(LDFLAGSPAR)
 
 clean:
-	rm bin/*
+	rm -f bin/*

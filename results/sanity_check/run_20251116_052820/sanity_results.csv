@@ -1,0 +1,13 @@
+Query,Target,Threads,Solutions,Time_s,Status
+bvg1,1,8,0.000229692,OK
+si2,1,ERROR:,of,OK
+m2d1,1,5,0.000287513,OK
+rand1,1,3,0.000221932,OK
+bvg1,4,8,0.000291955,OK
+si2,4,ERROR:,of,OK
+m2d1,4,5,0.000403231,OK
+rand1,4,3,0.00030006,OK
+bvg1,8,8,0.000550462,OK
+si2,8,ERROR:,of,OK
+m2d1,8,5,0.000712279,OK
+rand1,8,3,0.000656908,OK
