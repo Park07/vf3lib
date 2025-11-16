@@ -1,0 +1,6 @@
+Type,Size,Threads,Solutions,FirstTime_s,TotalTime_s,MaxMemory_KB,CPU_Percent,Status
+sparse,8,8,208545421,0.052351,2058.17,260623796,792,OK
+sparse,16,8,,,,355781280,477,KILLED
+sparse,24,8,,,,356069620,524,KILLED
+dense,8,8,298736001,0,5452.81,0,0,ERROR
+dense,16,8,,,,522560220,522,KILLED

@@ -1,0 +1,2 @@
+Type,Size,Threads,Solutions,FirstTime_s,TotalTime_s,MaxMemory_KB,CPU_Percent,Status
+sparse,8,8,208555716,0.052598,2035.19,243548552,791,OK

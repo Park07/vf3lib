@@ -1,0 +1,15 @@
+Type,Size,Threads,CacheMisses,CacheReferences,BranchMisses,BranchInstructions,PageFaults,CPUCycles,Instructions,IPC
+sparse,8,1,,,,,,,,0
+sparse,8,4,,,,,,,,0
+sparse,8,8,,,,,,,,0
+sparse,8,16,,,,,,,,0
+sparse,8,32,,,,,,,,0
+sparse,8,48,,,,,,,,0
+sparse,8,64,,,,,,,,0
+sparse,16,1,,,,,,,,0
+sparse,16,4,,,,,,,,0
+sparse,16,8,,,,,,,,0
+sparse,16,16,,,,,,,,0
+sparse,16,32,,,,,,,,0
+sparse,16,48,,,,,,,,0
+sparse,16,64,,,,,,,,0

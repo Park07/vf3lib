@@ -1,0 +1,13 @@
+nohup: ignoring input
+VF3PDL Enron Test Suite - 90s timeout
+Started: Thu Nov 13 12:52:03 PM UTC 2025
+
+[1/56] sparse 8v @ 1t (90s timeout)
+  → TIMEOUT at 90s
+[2/56] sparse 8v @ 4t (90s timeout)
+  → TIMEOUT at 90s
+[3/56] sparse 8v @ 8t (90s timeout)
+  → TIMEOUT at 90s
+[4/56] sparse 8v @ 16t (90s timeout)
+  → TIMEOUT at 90s
+[5/56] sparse 8v @ 32t (90s timeout)

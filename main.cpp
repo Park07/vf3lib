@@ -26,6 +26,11 @@ using namespace vflib;
 
 
 #ifndef WIN32
+
+// Global variables for signal handler
+static void* global_matching_engine_ptr = nullptr;
+static struct timeval global_start_time;
+
 void sig_handler(int sig) {
     switch (sig) {
 		case SIGKILL:
@@ -35,8 +40,18 @@ void sig_handler(int sig) {
 			std::cout << "Aborted \n";
 			exit(-1);
 		case SIGTERM:
-			std::cout << "Terminated \n";
-			exit(-1);
+                        if (global_matching_engine_ptr != nullptr) {
+                                struct timeval end_time;
+                                gettimeofday(&end_time, NULL);
+                                double elapsed = (end_time.tv_sec - global_start_time.tv_sec) +
+                                                (end_time.tv_usec - global_start_time.tv_usec) / 1000000.0;
+                                // Cast and get solution count using public method
+                                auto* engine = static_cast<vflib::MatchingEngine<state_t>*>(global_matching_engine_ptr);
+                                std::cout << engine->GetSolutionsCount() << " 0 " << elapsed << " TIMEOUT\n";
+                        } else {
+                                std::cout << "Terminated \n";
+                        }
+                        exit(-1);
 		case SIGSEGV:
 			std::cout << "Segmentation fault \n";
 			exit(-1);
@@ -144,6 +159,10 @@ int32_t main(int32_t argc, char** argv)
 	n2 = targ_graph.NodeCount();
 
 	MatchingEngine<state_t >* me = CreateMatchingEngine(opt);
+
+        // Set global pointer for signal handler
+        global_matching_engine_ptr = (void*)me;
+        gettimeofday(&global_start_time, NULL);
 
 	if(!me)
 	{

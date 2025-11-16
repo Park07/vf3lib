@@ -1,0 +1,89 @@
+nohup: ignoring input
+════════════════════════════════════════════════════
+VF3PDL roadNet - Smart Timeout Strategy
+════════════════════════════════════════════════════
+Threads 1,4,8,16,32: 90s timeout
+Threads 48,64: NO timeout (complete enumeration)
+56 memory tests + 56 perf tests = 112 total
+
+[1/56] sparse 8v @ 1t (90s timeout)
+  → 0 solutions, 95.108207323s
+[2/56] sparse 8v @ 4t (90s timeout)
+  → 0 solutions, 90.084076984s
+[3/56] sparse 8v @ 8t (90s timeout)
+  → 0 solutions, 90.082790738s
+[4/56] sparse 8v @ 16t (90s timeout)
+  → 0 solutions, 90.083642526s
+[5/56] sparse 8v @ 32t (90s timeout)
+  → 0 solutions, 90.079704374s
+[6/56] sparse 8v @ 48t (NO TIMEOUT)
+  → 0 solutions, 622.543617995s
+[7/56] sparse 8v @ 64t (NO TIMEOUT)
+  → 0 solutions, 667.105906427s
+[8/56] sparse 16v @ 1t (90s timeout)
+  → 0 solutions, 95.229996103s
+[9/56] sparse 16v @ 4t (90s timeout)
+  → 0 solutions, 90.084142581s
+[10/56] sparse 16v @ 8t (90s timeout)
+  → 0 solutions, 90.082672026s
+[11/56] sparse 16v @ 16t (90s timeout)
+  → 0 solutions, 90.083785473s
+[12/56] sparse 16v @ 32t (90s timeout)
+  → 0 solutions, 90.084049636s
+[13/56] sparse 16v @ 48t (NO TIMEOUT)
+  → 0 solutions, 686.855247947s
+[14/56] sparse 16v @ 64t (NO TIMEOUT)
+  → 0 solutions, 681.389115152s
+[15/56] sparse 24v @ 1t (90s timeout)
+  → 0 solutions, 95.183906262s
+[16/56] sparse 24v @ 4t (90s timeout)
+  → 0 solutions, 90.079016274s
+[17/56] sparse 24v @ 8t (90s timeout)
+  → 0 solutions, 90.076919477s
+[18/56] sparse 24v @ 16t (90s timeout)
+  → 0 solutions, 90.085049053s
+[19/56] sparse 24v @ 32t (90s timeout)
+  → 0 solutions, 90.088897186s
+[20/56] sparse 24v @ 48t (NO TIMEOUT)
+  → 0 solutions, 204.703311285s
+[21/56] sparse 24v @ 64t (NO TIMEOUT)
+  → 0 solutions, 197.620550915s
+[22/56] sparse 32v @ 1t (90s timeout)
+  → 0 solutions, 95.594439704s
+[23/56] sparse 32v @ 4t (90s timeout)
+  → 0 solutions, 90.060143252s
+[24/56] sparse 32v @ 8t (90s timeout)
+  → 0 solutions, 90.065282367s
+[25/56] sparse 32v @ 16t (90s timeout)
+  → 0 solutions, 90.081959852s
+[26/56] sparse 32v @ 32t (90s timeout)
+  → 0 solutions, 90.085605987s
+[27/56] sparse 32v @ 48t (NO TIMEOUT)
+  → 0 solutions, 627.342938651s
+[28/56] sparse 32v @ 64t (NO TIMEOUT)
+  → 0 solutions, 611.258540986s
+[29/56] dense 8v @ 1t (90s timeout)
+  → 0 solutions, 94.655328314s
+[30/56] dense 8v @ 4t (90s timeout)
+  → 0 solutions, 99.206914697s
+[31/56] dense 8v @ 8t (90s timeout)
+  → 0 solutions, 99.376867436s
+[32/56] dense 8v @ 16t (90s timeout)
+  → 0 solutions, 98.973477788s
+[33/56] dense 8v @ 32t (90s timeout)
+  → 0 solutions, 96.210132317s
+[34/56] dense 8v @ 48t (NO TIMEOUT)
+  → 0 solutions, 558.276666933s
+[35/56] dense 8v @ 64t (NO TIMEOUT)
+  → 0 solutions, 1235.199755404s
+[36/56] dense 16v @ 1t (90s timeout)
+  → 0 solutions, 95.151823338s
+[37/56] dense 16v @ 4t (90s timeout)
+  → 0 solutions, 97.833306105s
+[38/56] dense 16v @ 8t (90s timeout)
+  → 0 solutions, 99.196626459s
+[39/56] dense 16v @ 16t (90s timeout)
+  → 0 solutions, 99.339755105s
+[40/56] dense 16v @ 32t (90s timeout)
+  → 0 solutions, 95.658431171s
+[41/56] dense 16v @ 48t (NO TIMEOUT)

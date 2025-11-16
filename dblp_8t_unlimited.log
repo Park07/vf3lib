@@ -1,0 +1,4 @@
+nohup: ignoring input
+Running: sparse 8v with 8 threads (NO TIMEOUT)
+  Solutions: 208555716, Time: 2035.19s, Memory: 243548552KB, Status: OK
+Running: sparse 16v with 8 threads (NO TIMEOUT)

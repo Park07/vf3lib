@@ -1,0 +1,6 @@
+Type,Size,Threads,Solutions,FirstTime_s,TotalTime_s,MaxMemory_KB,CPU_Percent,Status
+sparse,8,1,94647,0,89.5547,72285068,99,OK
+sparse,16,1,4184,0,89.6235,112265656,99,OK
+sparse,24,1,0,0,89.6214,60217296,99,OK
+dense,8,1,531,0,89.5386,72284928,99,OK
+dense,16,1,36.6458,TIMEOUT,,0,99,OK

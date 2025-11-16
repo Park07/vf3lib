@@ -1,0 +1,70 @@
+nohup: ignoring input
+RESUMING Enron VF3PDL from test 23/56
+Starting at: sparse 32v @ 8 threads
+[23/56] sparse 32v @ 8t
+  → 0 solutions, 523914420KB memory
+[24/56] sparse 32v @ 16t
+  → 714 solutions, 228161000KB memory
+[25/56] sparse 32v @ 32t
+  → 524 solutions, 224868920KB memory
+[26/56] sparse 32v @ 48t
+  → 247 solutions, 207873172KB memory
+[27/56] sparse 32v @ 64t
+  → 230 solutions, 180445444KB memory
+[28/56] dense 8v @ 1t
+  → 8397418 solutions, 6236608KB memory
+[29/56] dense 8v @ 4t
+  → 31120161 solutions, 16254876KB memory
+[30/56] dense 8v @ 8t
+  → 34682000 solutions, 71889368KB memory
+[31/56] dense 8v @ 16t
+  → 8451350 solutions, 203486556KB memory
+[32/56] dense 8v @ 32t
+  → 359071 solutions, 236333112KB memory
+[33/56] dense 8v @ 48t
+  → 166771 solutions, 219548496KB memory
+[34/56] dense 8v @ 64t
+  → 29056 solutions, 188723500KB memory
+[35/56] dense 16v @ 1t
+  → 0 solutions, 1097532KB memory
+[36/56] dense 16v @ 4t
+  → 0 solutions, 4256888KB memory
+[37/56] dense 16v @ 8t
+  → 0 solutions, 5248064KB memory
+[38/56] dense 16v @ 16t
+  → 0 solutions, 10751204KB memory
+[39/56] dense 16v @ 32t
+  → 638 solutions, 20394872KB memory
+[40/56] dense 16v @ 48t
+  → 0 solutions, 37322268KB memory
+[41/56] dense 16v @ 64t
+  → 0 solutions, 40800460KB memory
+[42/56] dense 24v @ 1t
+  → 10459664 solutions, 31284220KB memory
+[43/56] dense 24v @ 4t
+  → 149477 solutions, 523501516KB memory
+[44/56] dense 24v @ 8t
+  → 22011 solutions, 523675188KB memory
+[45/56] dense 24v @ 16t
+  → 10108 solutions, 228354028KB memory
+[46/56] dense 24v @ 32t
+  → 5044 solutions, 227121596KB memory
+[47/56] dense 24v @ 48t
+  → 9906 solutions, 213854544KB memory
+[48/56] dense 24v @ 64t
+  → 12002 solutions, 184730164KB memory
+[49/56] dense 32v @ 1t
+  → 0 solutions, 1627056KB memory
+[50/56] dense 32v @ 4t
+  → 0 solutions, 3956492KB memory
+[51/56] dense 32v @ 8t
+  → 0 solutions, 5225552KB memory
+[52/56] dense 32v @ 16t
+  → 0 solutions, 7922552KB memory
+[53/56] dense 32v @ 32t
+  → 0 solutions, 23343756KB memory
+[54/56] dense 32v @ 48t
+  → 0 solutions, 23578328KB memory
+[55/56] dense 32v @ 64t
+  → 0 solutions, 37811032KB memory
+✅ COMPLETE! All 56 tests done!

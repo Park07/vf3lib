@@ -1,0 +1,4 @@
+nohup: ignoring input
+Terminated
+./run_dblp_8v_no_timeout.sh: line 10: 508140 Killed                  /usr/bin/time -v -o time_${TYPE}_${THREADS}.txt ~/vf3lib/bin/vf3p ~/vf3_test_dblp/query_${TYPE}_8v_1_NO_LABELS.graph ~/vf3_test_dblp/dblp_NO_LABELS.graph -a 2 -t $THREADS -l 0 -h 3 > output_${TYPE}_${THREADS}.log 2>&1
+./run_dblp_8v_no_timeout.sh: line 10: 508783 Killed                  /usr/bin/time -v -o time_${TYPE}_${THREADS}.txt ~/vf3lib/bin/vf3p ~/vf3_test_dblp/query_${TYPE}_8v_1_NO_LABELS.graph ~/vf3_test_dblp/dblp_NO_LABELS.graph -a 2 -t $THREADS -l 0 -h 3 > output_${TYPE}_${THREADS}.log 2>&1

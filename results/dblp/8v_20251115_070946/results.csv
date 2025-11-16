@@ -1,0 +1,6 @@
+Type,Size,Threads,Solutions,FirstTime_s,TotalTime_s,MaxMemory_KB,Status
+sparse,8,1,,0,,70983308,OK
+sparse,8,2,104699727,0,4038.01,119414440,OK
+sparse,8,4,,0,,,OK
+dense,8,1,,0,,,OK
+dense,8,2,,0,,,OK

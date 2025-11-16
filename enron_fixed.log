@@ -1,0 +1,47 @@
+nohup: ignoring input
+VF3PDL Enron - ACTUALLY WORKING VERSION
+[Test] sparse 8v @ 1t
+  → 12162550 solutions, 1816976KB memory, 99% CPU
+[Test] sparse 8v @ 4t
+  → 33907095 solutions, 17254588KB memory, 366% CPU
+[Test] sparse 8v @ 8t
+  → 45228370 solutions, 41951756KB memory, 697% CPU
+[Test] sparse 8v @ 16t
+  → 34550530 solutions, 89540228KB memory, 1181% CPU
+[Test] sparse 8v @ 32t
+  → 13499721 solutions, 180305736KB memory, 1685% CPU
+[Test] sparse 8v @ 48t
+  → 105588 solutions, 208079200KB memory, 1736% CPU
+[Test] sparse 8v @ 64t
+  → 65788 solutions, 182875740KB memory, 2016% CPU
+[Test] sparse 16v @ 1t
+  → 0 solutions, 257925840KB memory, 99% CPU
+[Test] sparse 16v @ 4t
+  → 14980 solutions, 521213124KB memory, 311% CPU
+[Test] sparse 16v @ 8t
+  → 0 solutions, 522237756KB memory, 408% CPU
+[Test] sparse 16v @ 16t
+  → 4206 solutions, 233425024KB memory, 792% CPU
+[Test] sparse 16v @ 32t
+  → 28636 solutions, 228854756KB memory, 1317% CPU
+[Test] sparse 16v @ 48t
+  → 5985 solutions, 203005080KB memory, 1705% CPU
+[Test] sparse 16v @ 64t
+  → 3724 solutions, 185079260KB memory, 2000% CPU
+[Test] sparse 24v @ 1t
+  → 0 solutions, 128051016KB memory, 99% CPU
+[Test] sparse 24v @ 4t
+  → 50621 solutions, 522532188KB memory, 283% CPU
+[Test] sparse 24v @ 8t
+  → 0 solutions, 522889008KB memory, 387% CPU
+[Test] sparse 24v @ 16t
+  → 43498 solutions, 221010980KB memory, 814% CPU
+[Test] sparse 24v @ 32t
+  → 3718 solutions, 219300460KB memory, 1341% CPU
+[Test] sparse 24v @ 48t
+  → 8355 solutions, 206228392KB memory, 1683% CPU
+[Test] sparse 24v @ 64t
+  → 2085 solutions, 181165816KB memory, 1983% CPU
+[Test] sparse 32v @ 1t
+  → 6498 solutions, 254577876KB memory, 99% CPU
+[Test] sparse 32v @ 4t

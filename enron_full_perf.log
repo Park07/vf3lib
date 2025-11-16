@@ -1,0 +1,126 @@
+nohup: ignoring input
+VF3PDL Enron - FULL PERFORMANCE ANALYSIS
+================================
+Phase 1: Memory & CPU metrics (56 tests)
+Phase 2: Perf hardware counters (56 tests)
+Started: Thu Nov 13 12:59:36 PM UTC 2025
+
+=== PHASE 1: Memory & CPU Analysis ===
+[Memory] sparse 8v @ 1t
+[Memory] sparse 8v @ 4t
+[Memory] sparse 8v @ 8t
+[Memory] sparse 8v @ 16t
+[Memory] sparse 8v @ 32t
+[Memory] sparse 8v @ 48t
+[Memory] sparse 8v @ 64t
+[Memory] sparse 16v @ 1t
+[Memory] sparse 16v @ 4t
+[Memory] sparse 16v @ 8t
+[Memory] sparse 16v @ 16t
+[Memory] sparse 16v @ 32t
+[Memory] sparse 16v @ 48t
+[Memory] sparse 16v @ 64t
+[Memory] sparse 24v @ 1t
+[Memory] sparse 24v @ 4t
+[Memory] sparse 24v @ 8t
+[Memory] sparse 24v @ 16t
+[Memory] sparse 24v @ 32t
+[Memory] sparse 24v @ 48t
+[Memory] sparse 24v @ 64t
+[Memory] sparse 32v @ 1t
+[Memory] sparse 32v @ 4t
+[Memory] sparse 32v @ 8t
+[Memory] sparse 32v @ 16t
+[Memory] sparse 32v @ 32t
+[Memory] sparse 32v @ 48t
+[Memory] sparse 32v @ 64t
+[Memory] dense 8v @ 1t
+[Memory] dense 8v @ 4t
+[Memory] dense 8v @ 8t
+[Memory] dense 8v @ 16t
+[Memory] dense 8v @ 32t
+[Memory] dense 8v @ 48t
+[Memory] dense 8v @ 64t
+[Memory] dense 16v @ 1t
+[Memory] dense 16v @ 4t
+[Memory] dense 16v @ 8t
+[Memory] dense 16v @ 16t
+[Memory] dense 16v @ 32t
+[Memory] dense 16v @ 48t
+[Memory] dense 16v @ 64t
+[Memory] dense 24v @ 1t
+[Memory] dense 24v @ 4t
+[Memory] dense 24v @ 8t
+[Memory] dense 24v @ 16t
+[Memory] dense 24v @ 32t
+[Memory] dense 24v @ 48t
+[Memory] dense 24v @ 64t
+[Memory] dense 32v @ 1t
+[Memory] dense 32v @ 4t
+[Memory] dense 32v @ 8t
+[Memory] dense 32v @ 16t
+[Memory] dense 32v @ 32t
+[Memory] dense 32v @ 48t
+[Memory] dense 32v @ 64t
+
+=== PHASE 2: Hardware Counter Analysis ===
+[Perf] sparse 8v @ 1t
+[Perf] sparse 8v @ 4t
+[Perf] sparse 8v @ 8t
+[Perf] sparse 8v @ 16t
+[Perf] sparse 8v @ 32t
+[Perf] sparse 8v @ 48t
+[Perf] sparse 8v @ 64t
+[Perf] sparse 16v @ 1t
+[Perf] sparse 16v @ 4t
+[Perf] sparse 16v @ 8t
+[Perf] sparse 16v @ 16t
+[Perf] sparse 16v @ 32t
+[Perf] sparse 16v @ 48t
+[Perf] sparse 16v @ 64t
+[Perf] sparse 24v @ 1t
+[Perf] sparse 24v @ 4t
+[Perf] sparse 24v @ 8t
+[Perf] sparse 24v @ 16t
+[Perf] sparse 24v @ 32t
+[Perf] sparse 24v @ 48t
+[Perf] sparse 24v @ 64t
+[Perf] sparse 32v @ 1t
+[Perf] sparse 32v @ 4t
+[Perf] sparse 32v @ 8t
+[Perf] sparse 32v @ 16t
+[Perf] sparse 32v @ 32t
+[Perf] sparse 32v @ 48t
+[Perf] sparse 32v @ 64t
+[Perf] dense 8v @ 1t
+[Perf] dense 8v @ 4t
+[Perf] dense 8v @ 8t
+[Perf] dense 8v @ 16t
+[Perf] dense 8v @ 32t
+[Perf] dense 8v @ 48t
+[Perf] dense 8v @ 64t
+[Perf] dense 16v @ 1t
+[Perf] dense 16v @ 4t
+[Perf] dense 16v @ 8t
+[Perf] dense 16v @ 16t
+[Perf] dense 16v @ 32t
+[Perf] dense 16v @ 48t
+[Perf] dense 16v @ 64t
+[Perf] dense 24v @ 1t
+[Perf] dense 24v @ 4t
+[Perf] dense 24v @ 8t
+[Perf] dense 24v @ 16t
+[Perf] dense 24v @ 32t
+[Perf] dense 24v @ 48t
+[Perf] dense 24v @ 64t
+[Perf] dense 32v @ 1t
+[Perf] dense 32v @ 4t
+[Perf] dense 32v @ 8t
+[Perf] dense 32v @ 16t
+[Perf] dense 32v @ 32t
+[Perf] dense 32v @ 48t
+[Perf] dense 32v @ 64t
+
+✅ COMPLETE!
+Performance CSV: /home/williamp/vf3lib/results/nov-rerun-vf3p/ENRON_FULL_PERF_20251113_125936/enron_vf3pdl_performance.csv
+Perf CSV: /home/williamp/vf3lib/results/nov-rerun-vf3p/ENRON_FULL_PERF_20251113_125936/enron_vf3pdl_perf.csv

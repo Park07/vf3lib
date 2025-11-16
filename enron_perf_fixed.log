@@ -1,0 +1,132 @@
+nohup: ignoring input
+VF3PDL Enron - FULL PERFORMANCE (FIXED PARSING)
+=== PHASE 1: Memory & CPU Analysis ===
+[Memory] sparse 8v @ 1t
+  → 12895483 solutions, 0MB memory
+[Memory] sparse 8v @ 4t
+  → 35361559 solutions, 0MB memory
+[Memory] sparse 8v @ 8t
+  → 45855633 solutions, 0MB memory
+[Memory] sparse 8v @ 16t
+  → 34630334 solutions, 0MB memory
+[Memory] sparse 8v @ 32t
+  → 10419623 solutions, 0MB memory
+[Memory] sparse 8v @ 48t
+  → 84496 solutions, 0MB memory
+[Memory] sparse 8v @ 64t
+  → 0 solutions, 0MB memory
+[Memory] sparse 16v @ 1t
+  → 0 solutions, 0MB memory
+[Memory] sparse 16v @ 4t
+  → 46024 solutions, 0MB memory
+[Memory] sparse 16v @ 8t
+  → 72907 solutions, 0MB memory
+[Memory] sparse 16v @ 16t
+  → 12045 solutions, 0MB memory
+[Memory] sparse 16v @ 32t
+  → 6220 solutions, 0MB memory
+[Memory] sparse 16v @ 48t
+  → 3789 solutions, 0MB memory
+[Memory] sparse 16v @ 64t
+  → 2915 solutions, 0MB memory
+[Memory] sparse 24v @ 1t
+  → 0 solutions, 0MB memory
+[Memory] sparse 24v @ 4t
+  → 0 solutions, 0MB memory
+[Memory] sparse 24v @ 8t
+  → 6609 solutions, 0MB memory
+[Memory] sparse 24v @ 16t
+  → 2249 solutions, 0MB memory
+[Memory] sparse 24v @ 32t
+  → 4175 solutions, 0MB memory
+[Memory] sparse 24v @ 48t
+  → 963 solutions, 0MB memory
+[Memory] sparse 24v @ 64t
+  → 0 solutions, 0MB memory
+[Memory] sparse 32v @ 1t
+  → 6393 solutions, 0MB memory
+[Memory] sparse 32v @ 4t
+  → 0 solutions, 0MB memory
+[Memory] sparse 32v @ 8t
+  → 0 solutions, 0MB memory
+[Memory] sparse 32v @ 16t
+  → 476 solutions, 0MB memory
+[Memory] sparse 32v @ 32t
+  → 412 solutions, 0MB memory
+[Memory] sparse 32v @ 48t
+  → 384 solutions, 0MB memory
+[Memory] sparse 32v @ 64t
+  → 0 solutions, 0MB memory
+[Memory] dense 8v @ 1t
+  → 7962960 solutions, 0MB memory
+[Memory] dense 8v @ 4t
+  → 24219229 solutions, 0MB memory
+[Memory] dense 8v @ 8t
+  → 36167631 solutions, 0MB memory
+[Memory] dense 8v @ 16t
+  → 18476752 solutions, 0MB memory
+[Memory] dense 8v @ 32t
+  → 200885 solutions, 0MB memory
+[Memory] dense 8v @ 48t
+  → 118494 solutions, 0MB memory
+[Memory] dense 8v @ 64t
+  → 62506 solutions, 0MB memory
+[Memory] dense 16v @ 1t
+  → 0 solutions, 0MB memory
+[Memory] dense 16v @ 4t
+  → 0 solutions, 0MB memory
+[Memory] dense 16v @ 8t
+  → 0 solutions, 0MB memory
+[Memory] dense 16v @ 16t
+  → 0 solutions, 0MB memory
+[Memory] dense 16v @ 32t
+  → 0 solutions, 0MB memory
+[Memory] dense 16v @ 48t
+  → 0 solutions, 0MB memory
+[Memory] dense 16v @ 64t
+  → 0 solutions, 0MB memory
+[Memory] dense 24v @ 1t
+  → 10691185 solutions, 0MB memory
+[Memory] dense 24v @ 4t
+  → 0 solutions, 0MB memory
+[Memory] dense 24v @ 8t
+  → 108559 solutions, 0MB memory
+[Memory] dense 24v @ 16t
+  → 13775 solutions, 0MB memory
+[Memory] dense 24v @ 32t
+  → 82661 solutions, 0MB memory
+[Memory] dense 24v @ 48t
+  → 6546 solutions, 0MB memory
+[Memory] dense 24v @ 64t
+  → 0 solutions, 0MB memory
+[Memory] dense 32v @ 1t
+  → 0 solutions, 0MB memory
+[Memory] dense 32v @ 4t
+  → 0 solutions, 0MB memory
+[Memory] dense 32v @ 8t
+  → 0 solutions, 0MB memory
+[Memory] dense 32v @ 16t
+  → 0 solutions, 0MB memory
+[Memory] dense 32v @ 32t
+  → 0 solutions, 0MB memory
+[Memory] dense 32v @ 48t
+  → 0 solutions, 0MB memory
+[Memory] dense 32v @ 64t
+  → 0 solutions, 0MB memory
+
+=== PHASE 2: Perf Profiling ===
+[Perf] sparse 8v @ 1t
+[Perf] sparse 8v @ 4t
+[Perf] sparse 8v @ 8t
+[Perf] sparse 8v @ 16t
+[Perf] sparse 8v @ 32t
+[Perf] sparse 8v @ 48t
+[Perf] sparse 8v @ 64t
+[Perf] sparse 16v @ 1t
+[Perf] sparse 16v @ 4t
+[Perf] sparse 16v @ 8t
+[Perf] sparse 16v @ 16t
+[Perf] sparse 16v @ 32t
+[Perf] sparse 16v @ 48t
+[Perf] sparse 16v @ 64t
+[Perf] sparse 24v @ 1t

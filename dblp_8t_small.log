@@ -1,0 +1,13 @@
+nohup: ignoring input
+Running: sparse 8v with 8 threads
+  Solutions: 208545421, Time: 2058.17s, Status: OK
+Running: sparse 16v with 8 threads
+  Solutions: , Time: s, Status: KILLED
+Running: sparse 24v with 8 threads
+  Solutions: , Time: s, Status: KILLED
+Running: dense 8v with 8 threads
+Terminated
+  Solutions: 298736001, Time: 5452.81s, Status: ERROR
+Running: dense 16v with 8 threads
+  Solutions: , Time: s, Status: KILLED
+Running: dense 24v with 8 threads

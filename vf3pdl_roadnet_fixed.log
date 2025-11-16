@@ -1,0 +1,115 @@
+nohup: ignoring input
+[1/56] sparse 8v @ 1t (90s)
+  → 0 solutions, 87.8681s
+[2/56] sparse 8v @ 4t (90s)
+  → 0 solutions, 87.8661s
+[3/56] sparse 8v @ 8t (90s)
+  → 0 solutions, 87.9155s
+[4/56] sparse 8v @ 16t (90s)
+  → 0 solutions, 87.878s
+[5/56] sparse 8v @ 32t (90s)
+  → 0 solutions, 87.7261s
+[6/56] sparse 8v @ 48t (90s)
+  → 0 solutions, 88.0831s
+[7/56] sparse 8v @ 64t (90s)
+  → 0 solutions, 88.0944s
+[8/56] sparse 16v @ 1t (90s)
+  → 0 solutions, 88.2416s
+[9/56] sparse 16v @ 4t (90s)
+  → 0 solutions, 87.9375s
+[10/56] sparse 16v @ 8t (90s)
+  → 0 solutions, 87.595s
+[11/56] sparse 16v @ 16t (90s)
+  → 0 solutions, 87.7385s
+[12/56] sparse 16v @ 32t (90s)
+  → 0 solutions, 88.2192s
+[13/56] sparse 16v @ 48t (90s)
+  → 0 solutions, 87.5894s
+[14/56] sparse 16v @ 64t (90s)
+  → 0 solutions, 88.0822s
+[15/56] sparse 24v @ 1t (90s)
+  → 0 solutions, 88.2324s
+[16/56] sparse 24v @ 4t (90s)
+  → 0 solutions, 87.8399s
+[17/56] sparse 24v @ 8t (90s)
+  → 0 solutions, 87.8402s
+[18/56] sparse 24v @ 16t (90s)
+  → 0 solutions, 87.8775s
+[19/56] sparse 24v @ 32t (90s)
+  → 0 solutions, 87.8722s
+[20/56] sparse 24v @ 48t (90s)
+  → 0 solutions, 87.6538s
+[21/56] sparse 24v @ 64t (90s)
+  → 0 solutions, 88.0645s
+[22/56] sparse 32v @ 1t (90s)
+  → 0 solutions, 88.2035s
+[23/56] sparse 32v @ 4t (90s)
+  → 0 solutions, 87.8699s
+[24/56] sparse 32v @ 8t (90s)
+  → 0 solutions, 87.8405s
+[25/56] sparse 32v @ 16t (90s)
+  → 0 solutions, 87.8476s
+[26/56] sparse 32v @ 32t (90s)
+  → 0 solutions, 87.862s
+[27/56] sparse 32v @ 48t (90s)
+  → 0 solutions, 87.6388s
+[28/56] sparse 32v @ 64t (90s)
+  → 0 solutions, 88.0655s
+[29/56] dense 8v @ 1t (90s)
+  → 0 solutions, 88.0748s
+[30/56] dense 8v @ 4t (90s)
+  → 27170 solutions, 87.6624s
+[31/56] dense 8v @ 8t (90s)
+  → 58225 solutions, 87.7357s
+[32/56] dense 8v @ 16t (90s)
+  → 101535 solutions, 87.7052s
+[33/56] dense 8v @ 32t (90s)
+  → 101948 solutions, 87.7528s
+[34/56] dense 8v @ 48t (NO TIMEOUT)
+  →  solutions, s
+[35/56] dense 8v @ 64t (NO TIMEOUT)
+  →  solutions, s
+[36/56] dense 16v @ 1t (90s)
+  → 0 solutions, 87.8175s
+[37/56] dense 16v @ 4t (90s)
+  → 7844 solutions, 87.7442s
+[38/56] dense 16v @ 8t (90s)
+  → 14996 solutions, 87.8765s
+[39/56] dense 16v @ 16t (90s)
+  → 23666 solutions, 87.7658s
+[40/56] dense 16v @ 32t (90s)
+  → 15814 solutions, 87.7131s
+[41/56] dense 16v @ 48t (NO TIMEOUT)
+  →  solutions, s
+[42/56] dense 16v @ 64t (NO TIMEOUT)
+  →  solutions, s
+[43/56] dense 24v @ 1t (90s)
+  → 0 solutions, 87.8138s
+[44/56] dense 24v @ 4t (90s)
+  → 0 solutions, 87.5554s
+[45/56] dense 24v @ 8t (90s)
+  → 87.769 solutions, s
+[46/56] dense 24v @ 16t (90s)
+  → 0 solutions, 87.7837s
+[47/56] dense 24v @ 32t (90s)
+  → 0 solutions, 87.7683s
+[48/56] dense 24v @ 48t (NO TIMEOUT)
+  →  solutions, s
+[49/56] dense 24v @ 64t (NO TIMEOUT)
+  →  solutions, s
+[50/56] dense 32v @ 1t (90s)
+  → 0 solutions, 87.8241s
+[51/56] dense 32v @ 4t (90s)
+  → 0 solutions, 87.585s
+[52/56] dense 32v @ 8t (90s)
+  → 0 solutions, 87.7516s
+[53/56] dense 32v @ 16t (90s)
+  → 0 solutions, 88.223s
+[54/56] dense 32v @ 32t (90s)
+  → 0 solutions, 87.7126s
+[55/56] dense 32v @ 48t (NO TIMEOUT)
+  →  solutions, s
+[56/56] dense 32v @ 64t (NO TIMEOUT)
+  → 2 solutions, 569.313s
+Phase 1 complete!
+COMPLETE!

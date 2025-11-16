@@ -1,0 +1,59 @@
+nohup: ignoring input
+VF3PDL roadNet-CA Test
+======================
+Algorithm: VF3PDL (-l 0)
+Threads: 32, 48, 64
+Timeout: 8v/16v = 420s, 24v/32v = none
+Started: Mon Nov 10 09:51:22 AM UTC 2025
+
+
+=== sparse 8v, t=32 ===
+Start: 09:51:22
+End: 09:58:29
+
+=== sparse 16v, t=32 ===
+Start: 09:58:29
+End: 10:05:33
+
+=== sparse 24v, t=32 ===
+Start: 10:05:33
+End: 10:11:22
+
+=== sparse 32v, t=32 ===
+Start: 10:11:22
+End: 10:18:28
+
+=== sparse 8v, t=48 ===
+Start: 10:18:28
+End: 10:25:29
+
+=== sparse 16v, t=48 ===
+Start: 10:25:29
+End: 10:32:29
+
+=== sparse 24v, t=48 ===
+Start: 10:32:29
+End: 10:36:01
+
+=== sparse 32v, t=48 ===
+Start: 10:36:01
+End: 10:39:48
+
+=== sparse 8v, t=64 ===
+Start: 10:39:48
+End: 10:46:48
+
+=== sparse 16v, t=64 ===
+Start: 10:46:48
+End: 10:53:48
+
+=== sparse 24v, t=64 ===
+Start: 10:53:48
+End: 10:55:03
+
+=== sparse 32v, t=64 ===
+Start: 10:55:03
+End: 10:57:07
+
+Completed: Mon Nov 10 10:57:07 AM UTC 2025
+Results saved to: /home/williamp/vf3lib/results/nov-rerun-vf3p/roadNet-CA_VF3PDL_20251110_095122

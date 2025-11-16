@@ -1,0 +1,369 @@
+nohup: ignoring input
+════════════════════════════════════════════════════
+VF3PDL LiveJournal - COMPLETE PERFORMANCE ANALYSIS
+════════════════════════════════════════════════════
+Step 1: Convert LJ data (5 min)
+Step 2: Memory/CPU tests - 56 tests (90 min)
+Step 3: Perf profiling - 56 tests (30 min)
+Total: ~2 hours
+
+═══ STEP 1: Converting LJ Data ═══
+Converting data graph...
+Traceback (most recent call last):
+  File "/home/williamp/vf3_test_enron/./convert_to_vf3_no_labels.py", line 52, in <module>
+    convert_tvf_to_vf3(sys.argv[1], sys.argv[2])
+  File "/home/williamp/vf3_test_enron/./convert_to_vf3_no_labels.py", line 11, in convert_tvf_to_vf3
+    assert header[0] == 't'
+AssertionError
+✓ Data graph converted
+✓ Conversion complete!
+
+═══ STEP 2: Memory & CPU Metrics (56 tests) ═══
+[1/56] sparse 8v @ 1t
+ERROR: End of file or reading error
+  → 0 solutions, .007903811s, 3944KB, 66% CPU
+[2/56] sparse 8v @ 4t
+ERROR: End of file or reading error
+  → 0 solutions, .010070464s, 3924KB, 80% CPU
+[3/56] sparse 8v @ 8t
+ERROR: End of file or reading error
+  → 0 solutions, .010012773s, 4000KB, 80% CPU
+[4/56] sparse 8v @ 16t
+ERROR: End of file or reading error
+  → 0 solutions, .009722812s, 3980KB, 80% CPU
+[5/56] sparse 8v @ 32t
+ERROR: End of file or reading error
+  → 0 solutions, .009927687s, 3980KB, 100% CPU
+[6/56] sparse 8v @ 48t
+ERROR: End of file or reading error
+  → 0 solutions, .009950483s, 3920KB, 100% CPU
+[7/56] sparse 8v @ 64t
+ERROR: End of file or reading error
+  → 0 solutions, .010081515s, 3908KB, 100% CPU
+[8/56] sparse 16v @ 1t
+ERROR: End of file or reading error
+  → 0 solutions, .009807842s, 3924KB, 80% CPU
+[9/56] sparse 16v @ 4t
+ERROR: End of file or reading error
+  → 0 solutions, .009841269s, 3920KB, 80% CPU
+[10/56] sparse 16v @ 8t
+ERROR: End of file or reading error
+  → 0 solutions, .010065871s, 3984KB, 80% CPU
+[11/56] sparse 16v @ 16t
+ERROR: End of file or reading error
+  → 0 solutions, .010102653s, 3876KB, 100% CPU
+[12/56] sparse 16v @ 32t
+ERROR: End of file or reading error
+  → 0 solutions, .010334776s, 3928KB, 80% CPU
+[13/56] sparse 16v @ 48t
+ERROR: End of file or reading error
+  → 0 solutions, .010263311s, 3880KB, 100% CPU
+[14/56] sparse 16v @ 64t
+ERROR: End of file or reading error
+  → 0 solutions, .010291544s, 3944KB, 80% CPU
+[15/56] sparse 24v @ 1t
+ERROR: End of file or reading error
+  → 0 solutions, .010303887s, 3912KB, 80% CPU
+[16/56] sparse 24v @ 4t
+ERROR: End of file or reading error
+  → 0 solutions, .010160555s, 3908KB, 100% CPU
+[17/56] sparse 24v @ 8t
+ERROR: End of file or reading error
+  → 0 solutions, .010389162s, 3920KB, 100% CPU
+[18/56] sparse 24v @ 16t
+ERROR: End of file or reading error
+  → 0 solutions, .010340701s, 3796KB, 100% CPU
+[19/56] sparse 24v @ 32t
+ERROR: End of file or reading error
+  → 0 solutions, .010192716s, 3980KB, 100% CPU
+[20/56] sparse 24v @ 48t
+ERROR: End of file or reading error
+  → 0 solutions, .010537892s, 3984KB, 80% CPU
+[21/56] sparse 24v @ 64t
+ERROR: End of file or reading error
+  → 0 solutions, .010463121s, 3944KB, 100% CPU
+[22/56] sparse 32v @ 1t
+ERROR: End of file or reading error
+  → 0 solutions, .010150713s, 3848KB, 80% CPU
+[23/56] sparse 32v @ 4t
+ERROR: End of file or reading error
+  → 0 solutions, .010156645s, 3860KB, 80% CPU
+[24/56] sparse 32v @ 8t
+ERROR: End of file or reading error
+  → 0 solutions, .010257089s, 3920KB, 100% CPU
+[25/56] sparse 32v @ 16t
+ERROR: End of file or reading error
+  → 0 solutions, .010259156s, 3980KB, 80% CPU
+[26/56] sparse 32v @ 32t
+ERROR: End of file or reading error
+  → 0 solutions, .011145232s, 3912KB, 66% CPU
+[27/56] sparse 32v @ 48t
+ERROR: End of file or reading error
+  → 0 solutions, .010150517s, 3920KB, 80% CPU
+[28/56] sparse 32v @ 64t
+ERROR: End of file or reading error
+  → 0 solutions, .010225953s, 3920KB, 80% CPU
+[29/56] dense 8v @ 1t
+ERROR: End of file or reading error
+  → 0 solutions, .010187158s, 3936KB, 100% CPU
+[30/56] dense 8v @ 4t
+ERROR: End of file or reading error
+  → 0 solutions, .010389278s, 3908KB, 100% CPU
+[31/56] dense 8v @ 8t
+ERROR: End of file or reading error
+  → 0 solutions, .010339591s, 3928KB, 100% CPU
+[32/56] dense 8v @ 16t
+ERROR: End of file or reading error
+  → 0 solutions, .010446517s, 3936KB, 100% CPU
+[33/56] dense 8v @ 32t
+ERROR: End of file or reading error
+  → 0 solutions, .010304321s, 3920KB, 100% CPU
+[34/56] dense 8v @ 48t
+ERROR: End of file or reading error
+  → 0 solutions, .010312211s, 3984KB, 100% CPU
+[35/56] dense 8v @ 64t
+ERROR: End of file or reading error
+  → 0 solutions, .010245353s, 3908KB, 80% CPU
+[36/56] dense 16v @ 1t
+ERROR: End of file or reading error
+  → 0 solutions, .010158710s, 3944KB, 100% CPU
+[37/56] dense 16v @ 4t
+ERROR: End of file or reading error
+  → 0 solutions, .010258112s, 3924KB, 80% CPU
+[38/56] dense 16v @ 8t
+ERROR: End of file or reading error
+  → 0 solutions, .010175600s, 3948KB, 80% CPU
+[39/56] dense 16v @ 16t
+ERROR: End of file or reading error
+  → 0 solutions, .010381251s, 3908KB, 80% CPU
+[40/56] dense 16v @ 32t
+ERROR: End of file or reading error
+  → 0 solutions, .010345701s, 3920KB, 80% CPU
+[41/56] dense 16v @ 48t
+ERROR: End of file or reading error
+  → 0 solutions, .010388425s, 3996KB, 100% CPU
+[42/56] dense 16v @ 64t
+ERROR: End of file or reading error
+  → 0 solutions, .010512806s, 3948KB, 80% CPU
+[43/56] dense 24v @ 1t
+ERROR: End of file or reading error
+  → 0 solutions, .010366667s, 3852KB, 80% CPU
+[44/56] dense 24v @ 4t
+ERROR: End of file or reading error
+  → 0 solutions, .010465545s, 3984KB, 100% CPU
+[45/56] dense 24v @ 8t
+ERROR: End of file or reading error
+  → 0 solutions, .010403254s, 3920KB, 100% CPU
+[46/56] dense 24v @ 16t
+ERROR: End of file or reading error
+  → 0 solutions, .010660826s, 3984KB, 100% CPU
+[47/56] dense 24v @ 32t
+ERROR: End of file or reading error
+  → 0 solutions, .010563404s, 3940KB, 80% CPU
+[48/56] dense 24v @ 48t
+ERROR: End of file or reading error
+  → 0 solutions, .010197200s, 4004KB, 80% CPU
+[49/56] dense 24v @ 64t
+ERROR: End of file or reading error
+  → 0 solutions, .010136984s, 3984KB, 80% CPU
+[50/56] dense 32v @ 1t
+ERROR: End of file or reading error
+  → 0 solutions, .010810201s, 3864KB, 66% CPU
+[51/56] dense 32v @ 4t
+ERROR: End of file or reading error
+  → 0 solutions, .010431226s, 3852KB, 100% CPU
+[52/56] dense 32v @ 8t
+ERROR: End of file or reading error
+  → 0 solutions, .010456078s, 3916KB, 100% CPU
+[53/56] dense 32v @ 16t
+ERROR: End of file or reading error
+  → 0 solutions, .010536740s, 3924KB, 100% CPU
+[54/56] dense 32v @ 32t
+ERROR: End of file or reading error
+  → 0 solutions, .010301177s, 3984KB, 80% CPU
+[55/56] dense 32v @ 48t
+ERROR: End of file or reading error
+  → 0 solutions, .010236593s, 3928KB, 100% CPU
+[56/56] dense 32v @ 64t
+ERROR: End of file or reading error
+  → 0 solutions, .010516691s, 4000KB, 100% CPU
+
+Step 2 complete! ✓
+
+═══ STEP 3: Perf Hardware Profiling (56 tests) ═══
+[1/56] Profiling: sparse 8v @ 1t
+ERROR: End of file or reading error
+  → IPC: 1.445, Cache misses: 8850
+[2/56] Profiling: sparse 8v @ 4t
+ERROR: End of file or reading error
+  → IPC: 1.348, Cache misses: 5627
+[3/56] Profiling: sparse 8v @ 8t
+ERROR: End of file or reading error
+  → IPC: 1.470, Cache misses: 17873
+[4/56] Profiling: sparse 8v @ 16t
+ERROR: End of file or reading error
+  → IPC: 1.460, Cache misses: 10435
+[5/56] Profiling: sparse 8v @ 32t
+ERROR: End of file or reading error
+  → IPC: 1.416, Cache misses: 17523
+[6/56] Profiling: sparse 8v @ 48t
+ERROR: End of file or reading error
+  → IPC: 1.384, Cache misses: 8959
+[7/56] Profiling: sparse 8v @ 64t
+ERROR: End of file or reading error
+  → IPC: 1.360, Cache misses: 4052
+[8/56] Profiling: sparse 16v @ 1t
+ERROR: End of file or reading error
+  → IPC: 1.359, Cache misses: 4755
+[9/56] Profiling: sparse 16v @ 4t
+ERROR: End of file or reading error
+  → IPC: 1.367, Cache misses: 4506
+[10/56] Profiling: sparse 16v @ 8t
+ERROR: End of file or reading error
+  → IPC: 1.356, Cache misses: 5430
+[11/56] Profiling: sparse 16v @ 16t
+ERROR: End of file or reading error
+  → IPC: 1.446, Cache misses: 15562
+[12/56] Profiling: sparse 16v @ 32t
+ERROR: End of file or reading error
+  → IPC: 1.433, Cache misses: 11979
+[13/56] Profiling: sparse 16v @ 48t
+ERROR: End of file or reading error
+  → IPC: 1.376, Cache misses: 7059
+[14/56] Profiling: sparse 16v @ 64t
+ERROR: End of file or reading error
+  → IPC: 1.428, Cache misses: 11233
+[15/56] Profiling: sparse 24v @ 1t
+ERROR: End of file or reading error
+  → IPC: 1.425, Cache misses: 11185
+[16/56] Profiling: sparse 24v @ 4t
+ERROR: End of file or reading error
+  → IPC: 1.420, Cache misses: 9810
+[17/56] Profiling: sparse 24v @ 8t
+ERROR: End of file or reading error
+  → IPC: 1.462, Cache misses: 11262
+[18/56] Profiling: sparse 24v @ 16t
+ERROR: End of file or reading error
+  → IPC: 1.432, Cache misses: 9592
+[19/56] Profiling: sparse 24v @ 32t
+ERROR: End of file or reading error
+  → IPC: 1.437, Cache misses: 12147
+[20/56] Profiling: sparse 24v @ 48t
+ERROR: End of file or reading error
+  → IPC: 1.439, Cache misses: 10986
+[21/56] Profiling: sparse 24v @ 64t
+ERROR: End of file or reading error
+  → IPC: 1.448, Cache misses: 8191
+[22/56] Profiling: sparse 32v @ 1t
+ERROR: End of file or reading error
+  → IPC: 1.443, Cache misses: 9440
+[23/56] Profiling: sparse 32v @ 4t
+ERROR: End of file or reading error
+  → IPC: 1.453, Cache misses: 7002
+[24/56] Profiling: sparse 32v @ 8t
+ERROR: End of file or reading error
+  → IPC: 1.357, Cache misses: 8340
+[25/56] Profiling: sparse 32v @ 16t
+ERROR: End of file or reading error
+  → IPC: 1.433, Cache misses: 12550
+[26/56] Profiling: sparse 32v @ 32t
+ERROR: End of file or reading error
+  → IPC: 1.436, Cache misses: 13107
+[27/56] Profiling: sparse 32v @ 48t
+ERROR: End of file or reading error
+  → IPC: 1.368, Cache misses: 6226
+[28/56] Profiling: sparse 32v @ 64t
+ERROR: End of file or reading error
+  → IPC: 1.378, Cache misses: 3907
+[29/56] Profiling: dense 8v @ 1t
+ERROR: End of file or reading error
+  → IPC: 1.384, Cache misses: 6459
+[30/56] Profiling: dense 8v @ 4t
+ERROR: End of file or reading error
+  → IPC: 1.420, Cache misses: 10087
+[31/56] Profiling: dense 8v @ 8t
+ERROR: End of file or reading error
+  → IPC: 1.422, Cache misses: 13391
+[32/56] Profiling: dense 8v @ 16t
+ERROR: End of file or reading error
+  → IPC: 1.435, Cache misses: 14672
+[33/56] Profiling: dense 8v @ 32t
+ERROR: End of file or reading error
+  → IPC: 1.441, Cache misses: 12077
+[34/56] Profiling: dense 8v @ 48t
+ERROR: End of file or reading error
+  → IPC: 1.330, Cache misses: 9196
+[35/56] Profiling: dense 8v @ 64t
+ERROR: End of file or reading error
+  → IPC: 1.365, Cache misses: 4950
+[36/56] Profiling: dense 16v @ 1t
+ERROR: End of file or reading error
+  → IPC: 1.349, Cache misses: 6128
+[37/56] Profiling: dense 16v @ 4t
+ERROR: End of file or reading error
+  → IPC: 1.379, Cache misses: 4412
+[38/56] Profiling: dense 16v @ 8t
+ERROR: End of file or reading error
+  → IPC: 1.417, Cache misses: 16455
+[39/56] Profiling: dense 16v @ 16t
+ERROR: End of file or reading error
+  → IPC: 1.413, Cache misses: 11030
+[40/56] Profiling: dense 16v @ 32t
+ERROR: End of file or reading error
+  → IPC: 1.426, Cache misses: 12494
+[41/56] Profiling: dense 16v @ 48t
+ERROR: End of file or reading error
+  → IPC: 1.423, Cache misses: 9036
+[42/56] Profiling: dense 16v @ 64t
+ERROR: End of file or reading error
+  → IPC: 1.408, Cache misses: 7997
+[43/56] Profiling: dense 24v @ 1t
+ERROR: End of file or reading error
+  → IPC: 1.450, Cache misses: 10133
+[44/56] Profiling: dense 24v @ 4t
+ERROR: End of file or reading error
+  → IPC: 1.434, Cache misses: 9402
+[45/56] Profiling: dense 24v @ 8t
+ERROR: End of file or reading error
+  → IPC: 1.386, Cache misses: 4844
+[46/56] Profiling: dense 24v @ 16t
+ERROR: End of file or reading error
+  → IPC: 1.433, Cache misses: 9421
+[47/56] Profiling: dense 24v @ 32t
+ERROR: End of file or reading error
+  → IPC: 1.413, Cache misses: 7552
+[48/56] Profiling: dense 24v @ 48t
+ERROR: End of file or reading error
+  → IPC: 1.431, Cache misses: 9271
+[49/56] Profiling: dense 24v @ 64t
+ERROR: End of file or reading error
+  → IPC: 1.395, Cache misses: 5784
+[50/56] Profiling: dense 32v @ 1t
+ERROR: End of file or reading error
+  → IPC: 1.432, Cache misses: 9509
+[51/56] Profiling: dense 32v @ 4t
+ERROR: End of file or reading error
+  → IPC: 1.434, Cache misses: 9533
+[52/56] Profiling: dense 32v @ 8t
+ERROR: End of file or reading error
+  → IPC: 1.444, Cache misses: 16854
+[53/56] Profiling: dense 32v @ 16t
+ERROR: End of file or reading error
+  → IPC: 1.421, Cache misses: 12379
+[54/56] Profiling: dense 32v @ 32t
+ERROR: End of file or reading error
+  → IPC: 1.437, Cache misses: 9568
+[55/56] Profiling: dense 32v @ 48t
+ERROR: End of file or reading error
+  → IPC: 1.439, Cache misses: 12237
+[56/56] Profiling: dense 32v @ 64t
+ERROR: End of file or reading error
+  → IPC: 1.433, Cache misses: 10712
+
+════════════════════════════════════════════════════
+VF3PDL LJ ANALYSIS COMPLETE! ✓
+════════════════════════════════════════════════════
+
+Results:
+  • /home/williamp/vf3lib/results/nov-rerun-vf3p/lj_vf3pdl_performance.csv
+  • /home/williamp/vf3lib/results/nov-rerun-vf3p/lj_vf3pdl_perf.csv

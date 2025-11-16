@@ -1,0 +1,4 @@
+Type,Size,Threads,Solutions,FirstTime_s,TotalTime_s,MaxMemory_KB,CPU_Percent,ContextSwitches,PageFaults,Status
+sparse,8,1,12344374,0,89.8151,1816816,99,,page,OK
+sparse,8,4,35145133,0,89.8272,20302224,381,,page,OK
+sparse,8,8,45257869,0,89.8482,42350776,697,,page,OK

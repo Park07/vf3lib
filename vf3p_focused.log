@@ -1,0 +1,11 @@
+nohup: ignoring input
+VF3PLS roadNet-CA Complete Run
+===============================
+Threads: 32, 48, 64
+Types: sparse, dense
+Sizes: 8v, 16v, 24v, 32v
+Started: Mon Nov 10 09:47:34 AM UTC 2025
+
+
+=== sparse 8v, t=32 ===
+Start: 2025-11-10 09:47:34

@@ -1,0 +1,107 @@
+nohup: ignoring input
+VF3P Experimental Results
+=========================
+Dataset: roadNet-CA
+Started: Mon Nov 10 03:40:42 AM UTC 2025
+Data Graph: ~/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph
+
+
+=== Query: 8v sparse, Threads: 16 ===
+Query file: /home/williamp/vf3_test_roadnet/query_sparse_8v_1_NO_LABELS.graph
+Start time: 03:40:42
+302352 0 298.48 TIMEOUT
+End time: 03:45:57
+
+=== Query: 16v sparse, Threads: 16 ===
+Query file: /home/williamp/vf3_test_roadnet/query_sparse_16v_1_NO_LABELS.graph
+Start time: 03:45:57
+99575 0 298.864 TIMEOUT
+End time: 03:51:10
+
+=== Query: 24v sparse, Threads: 16 ===
+Query file: /home/williamp/vf3_test_roadnet/query_sparse_24v_1_NO_LABELS.graph
+Start time: 03:51:10
+18893 0.696436 138.961
+End time: 03:53:34
+
+=== Query: 32v sparse, Threads: 16 ===
+Query file: /home/williamp/vf3_test_roadnet/query_sparse_32v_1_NO_LABELS.graph
+Start time: 03:53:34
+5679 25.3651 99.6393
+End time: 03:55:16
+
+=== Query: 8v sparse, Threads: 32 ===
+Query file: /home/williamp/vf3_test_roadnet/query_sparse_8v_1_NO_LABELS.graph
+Start time: 03:55:16
+657685 0 298.559 TIMEOUT
+End time: 04:00:20
+
+=== Query: 16v sparse, Threads: 32 ===
+Query file: /home/williamp/vf3_test_roadnet/query_sparse_16v_1_NO_LABELS.graph
+Start time: 04:00:20
+116369 0 298.47 TIMEOUT
+End time: 04:05:25
+
+=== Query: 24v sparse, Threads: 32 ===
+Query file: /home/williamp/vf3_test_roadnet/query_sparse_24v_1_NO_LABELS.graph
+Start time: 04:05:25
+18894 0.737264 193.702
+End time: 04:08:42
+
+=== Query: 32v sparse, Threads: 32 ===
+Query file: /home/williamp/vf3_test_roadnet/query_sparse_32v_1_NO_LABELS.graph
+Start time: 04:08:42
+5678 28.1445 133.581
+End time: 04:10:58
+
+=== Query: 8v sparse, Threads: 48 ===
+Query file: /home/williamp/vf3_test_roadnet/query_sparse_8v_1_NO_LABELS.graph
+Start time: 04:10:58
+1004625 0 298.812 TIMEOUT
+End time: 04:15:58
+
+=== Query: 16v sparse, Threads: 48 ===
+Query file: /home/williamp/vf3_test_roadnet/query_sparse_16v_1_NO_LABELS.graph
+Start time: 04:15:58
+299371 0 298.795 TIMEOUT
+End time: 04:20:58
+
+=== Query: 24v sparse, Threads: 48 ===
+Query file: /home/williamp/vf3_test_roadnet/query_sparse_24v_1_NO_LABELS.graph
+Start time: 04:20:58
+18894 0.717811 199.127
+End time: 04:24:20
+
+=== Query: 32v sparse, Threads: 48 ===
+Query file: /home/williamp/vf3_test_roadnet/query_sparse_32v_1_NO_LABELS.graph
+Start time: 04:24:20
+5678 31.4682 139.617
+End time: 04:26:41
+
+=== Query: 8v sparse, Threads: 64 ===
+Query file: /home/williamp/vf3_test_roadnet/query_sparse_8v_1_NO_LABELS.graph
+Start time: 04:26:41
+924237 0 298.748 TIMEOUT
+End time: 04:31:42
+
+=== Query: 16v sparse, Threads: 64 ===
+Query file: /home/williamp/vf3_test_roadnet/query_sparse_16v_1_NO_LABELS.graph
+Start time: 04:31:42
+268433 0 298.787 TIMEOUT
+End time: 04:36:42
+
+=== Query: 24v sparse, Threads: 64 ===
+Query file: /home/williamp/vf3_test_roadnet/query_sparse_24v_1_NO_LABELS.graph
+Start time: 04:36:42
+18892 0.776512 66.536
+End time: 04:37:50
+
+=== Query: 32v sparse, Threads: 64 ===
+Query file: /home/williamp/vf3_test_roadnet/query_sparse_32v_1_NO_LABELS.graph
+Start time: 04:37:50
+5678 18.827 143.537
+End time: 04:40:16
+
+Completed: Mon Nov 10 04:40:16 AM UTC 2025
+All results saved to: /home/williamp/vf3lib/results/nov-rerun-vf3p/roadNet-CA_20251110_034042
+CSV summary created: /home/williamp/vf3lib/results/nov-rerun-vf3p/roadNet-CA_20251110_034042/results.csv
