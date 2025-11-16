@@ -1,0 +1,4 @@
+Type,Size,Threads,Solutions,FirstTime_s,TotalTime_s,MaxMemory_KB,CPU_Percent,Status
+sparse,8,1,4132419,0,29.8121,1712384,99,TIMEOUT
+sparse,8,8,12716387,0,29.813,40799672,650,TIMEOUT
+sparse,8,16,329351,0,29.8288,139357880,785,TIMEOUT
