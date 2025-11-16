@@ -11,3 +11,16 @@ sparse,24,8,2728,0,29.8401,250291744,446,TIMEOUT
 sparse,24,16,2928,0,29.8701,141955344,783,TIMEOUT
 sparse,24,32,935,0,29.811,74244736,1310,TIMEOUT
 sparse,24,48,Segmentation,fault,,193648,603,ERROR
+sparse,32,16,,,,522650272,735,TIMEOUT
+sparse,32,32,70,0,29.83,72525672,1320,TIMEOUT
+sparse,32,48,Segmentation,fault,,207700,617,ERROR
+sparse,32,64,Segmentation,fault,,110736,560,ERROR
+dense,8,1,1399983,0,29.8101,2117524,99,TIMEOUT
+dense,8,8,Segmentation,fault,,11955268,416,ERROR
+dense,8,16,Aborted,,,2229732,668,ERROR
+dense,8,32,Segmentation,fault,,91936,280,ERROR
+dense,8,48,Segmentation,fault,,64536,293,ERROR
+dense,8,64,Segmentation,fault,,79492,534,ERROR
+dense,16,1,0,0,29.8068,766244,99,TIMEOUT
+dense,16,8,Aborted,,,356688,216,ERROR
+dense,16,16,Aborted,,,58960,130,ERROR

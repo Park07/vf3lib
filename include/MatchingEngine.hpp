@@ -4,7 +4,7 @@
  * @date   24/10/2017
  * @brief  Declaration of the matching engine.
  */
-
+#pragma omp atomic
 #ifndef MATCH_H
 #define MATCH_H
 
@@ -78,7 +78,7 @@ namespace vflib
 		#endif
 
 	public:
-		MatchingEngine(bool storeSolutions = false, bool edgeInduced = false): visit(NULL), 
+		MatchingEngine(bool storeSolutions = false, bool edgeInduced = false): visit(NULL),
 			solCount(0), edgeInduced(edgeInduced), storeSolutions(storeSolutions){};
 
 		MatchingEngine(MatchingVisitor<VFState> *visit, bool storeSolutions = false, bool edgeInduced = false) : visit(visit), solCount(0), edgeInduced(edgeInduced), storeSolutions(storeSolutions) {}
@@ -98,7 +98,7 @@ namespace vflib
 		#endif
 
 		inline size_t GetSolutionsCount() { return (size_t)solCount; }
-		
+
 		inline void GetSolutions(std::vector<MatchingSolution>& sols)
 		{
 			sols = solutions;
@@ -144,14 +144,14 @@ namespace vflib
 
 			#ifdef TRACE
 			// Stato figlio s0
-			if (s.GetTraceID()==NULL_TRACE_ID) 
-			{	
+			if (s.GetTraceID()==NULL_TRACE_ID)
+			{
 				// Aggiorno id dello stato corrente
 				s.SetTraceID(trace->AppendCandidateState(NULL_TRACE_ID, 0));
 
 				trace->SetFeasible();
 			}
-			
+
 			// Chiamata ricorsiva subito dopo aver aggiunto uno stato
 			uint32_t current_depth = trace->GetLastDepth();
 
@@ -240,14 +240,14 @@ namespace vflib
 		{
 			#ifdef TRACE
 			// Stato figlio s0
-			if (s.GetTraceID()==NULL_TRACE_ID) 
-			{	
+			if (s.GetTraceID()==NULL_TRACE_ID)
+			{
 				// Aggiorno id dello stato corrente
 				s.SetTraceID(trace->AppendCandidateState(NULL_TRACE_ID, 0));
 
 				trace->SetFeasible();
 			}
-			
+
 			// Chiamata ricorsiva subito dopo aver aggiunto uno stato
 			uint32_t current_depth = trace->GetLastDepth();
 

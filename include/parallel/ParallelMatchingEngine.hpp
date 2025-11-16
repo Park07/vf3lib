@@ -1,5 +1,6 @@
 #ifndef PARALLELMATCHINGTHREADPOOL_HPP
 #define PARALLELMATCHINGTHREADPOOL_HPP
+#pragma omp atomic
 
 #include <omp.h>
 #include <vector>

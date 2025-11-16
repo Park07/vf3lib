@@ -1,0 +1,12 @@
+double free or corruption (out)
+double free or corruption (fasttop)
+corrupted size vs. prev_size in fastbins
+corrupted double-linked list
+malloc(): unaligned tcache chunk detected
+double free or corruption (!prev)
+double free or corruption (fasttop)
+corrupted size vs. prev_size in fastbins
+double free or corruption (fasttop)
+malloc_consolidate(): unaligned fastbin chunk detected
+corrupted size vs. prev_size in fastbins
+malloc(): unsorted double linked list corrupted
