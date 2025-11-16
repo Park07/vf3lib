@@ -1,112 +1,81 @@
 #ifndef LOCKFREESTACK_HPP
 #define LOCKFREESTACK_HPP
 
-#include <atomic>
+#include <omp.h>
+#include <memory>
+#include <stack>
 #include "Stack.hpp"
 
-namespace vflib
-{
+namespace vflib {
 
-template<typename T >
-class LockFreeStack : public Stack<T >
-{
-    private:
-        struct Node
-        {
-            std::shared_ptr<T > data;
-            Node* next;
-            Node(T const& data_):data(std::make_shared<T >(data_)){}
-        };
+// OpenMP version - uses critical sections but with finer-grained locking
+template<typename T>
+class LockFreeStack : public Stack<T> {
+private:
+	std::stack<std::shared_ptr<T>> data_stack;
+	std::stack<std::shared_ptr<T>> free_stack;
+	size_t count;
 
-        struct HeadNode
-        {
-            uintptr_t aba = 0;
-            Node* node = nullptr;
-        };
+public:
+	LockFreeStack() : count(0) {}
 
-        std::atomic<HeadNode> head;
-        std::atomic<HeadNode> free;
-        std::atomic<size_t> count;
+	~LockFreeStack() {}
 
-        void push_node(std::atomic<HeadNode>& head, Node* node)
-        {
-            HeadNode next, origin = head.load();
-            do
-            {
-                node->next = origin.node;
-                next.aba = origin.aba + 1;
-                next.node = node;
-                /* Mi aspetto che head sia uguale ad origin quindi lo scambio con next */
-            } while (!head.compare_exchange_weak(origin, next));
-        }
+	size_t size() {
+		size_t result;
+		#pragma omp atomic read
+		result = count;
+		return result;
+	}
 
-        Node* pop_node(std::atomic<HeadNode>& head)
-        {
-            HeadNode next, origin = head.load();
-            do
-            {
-                if(origin.node == nullptr)
-                {
-                    return nullptr;
-                }
-                next.aba = origin.aba + 1;
-                next.node = origin.node->next;
-            } while (!head.compare_exchange_weak(origin, next));
-            return origin.node;
-        }
-    
-    public:
-        LockFreeStack(){
-            count=0;
-        }
+	void push(T const& data) {
+		std::shared_ptr<T> node_ptr;
 
-        ~LockFreeStack()
-        {
-            Node* node = nullptr;
-            HeadNode headnode = free.load();
-            while(headnode.node)
-            {
-                node = headnode.node;
-                headnode.node = headnode.node->next;
-                delete node;
-            }
-        }
+		// Try to reuse from free stack
+		#pragma omp critical(free_stack_access)
+		{
+			if (!free_stack.empty()) {
+				node_ptr = free_stack.top();
+				free_stack.pop();
+				*node_ptr = data;
+			} else {
+				node_ptr = std::make_shared<T>(data);
+			}
+		}
 
-        size_t size()
-        {
-            return count.load();
-        }
+		#pragma omp critical(data_stack_access)
+		{
+			data_stack.push(node_ptr);
+		}
 
-        void push(T const& data)
-        {
-            /* Reuse node*/
-            Node* n = pop_node(free);
-            if(!n)
-            {
-                n = new Node(data);
-            }
-            else
-            {
-                n->data = std::make_shared<T >(data);
-            }
-            push_node(head, n);
-            count++;
-        }
+		#pragma omp atomic
+		count++;
+	}
 
-        std::shared_ptr<T > pop()
-        {
-            std::shared_ptr<T > res;
-            Node* n = pop_node(head);
-            if(!n)
-            {
-                return res;
-            }
-            res.swap(n->data);
-            count--;
-            push_node(free, n);
-            return res;
-        }
+	std::shared_ptr<T> pop() {
+		std::shared_ptr<T> res;
 
+		#pragma omp critical(data_stack_access)
+		{
+			if (!data_stack.empty()) {
+				res = data_stack.top();
+				data_stack.pop();
+			}
+		}
+
+		if (res) {
+			#pragma omp atomic
+			count--;
+
+			// Return to free stack for reuse
+			#pragma omp critical(free_stack_access)
+			{
+				free_stack.push(res);
+			}
+		}
+
+		return res;
+	}
 };
 
 }

@@ -10,6 +10,10 @@
 #include <iostream>
 #include "VFLib.h"
 
+#ifdef VF3P
+#include <omp.h>
+#endif
+
 #define VF3PGSS	 (1)
 #define VF3PWLS  (2)
 
@@ -32,6 +36,7 @@ struct OptionStructure
 	std::string format;
 	float repetitionTimeLimit;
 	bool edgeInduced;
+
 	OptionStructure() : pattern(nullptr),
 						target(nullptr),
 						undirected(false),
@@ -47,7 +52,7 @@ struct OptionStructure
 #endif
 						verbose(0),
 						format("vf"),
-						edgeInduced(false), // by default the algorithm solves the node-induced subgraph isomorphism problem
+						edgeInduced(false),
 						repetitionTimeLimit(1)
 	{
 	}
@@ -55,22 +60,24 @@ struct OptionStructure
 
 typedef OptionStructure Options;
 
-
 void PrintUsage()
 {
 	std::string outstring = "vf3 [pattern] [target] ";
 #ifdef VF3P
-  outstring += "-c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k ";
+	outstring += "-c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k ";
+	outstring += "\n";
+	outstring += "  OpenMP Thread Affinity:\n";
+	outstring += "  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity\n";
+	outstring += "  Set OMP_NUM_THREADS=<n> to override -t option\n";
 #endif
 	outstring += "-u -s -f [graph format]";
 	std::cout<<outstring<<std::endl;
 }
 
-
 bool GetOptions(Options &opt, int argc, char **argv)
 {
 	/*
-	* -c Start CPU for the pool allocation
+	* -c Start CPU for the pool allocation (with OpenMP, use OMP_PLACES instead)
 	* -t Number of threads. Default [1]
 	* -a Version of the matcher to use. Default -1 is VF3
 	* -h SSR limit for the global stack. Default 3
@@ -86,7 +93,7 @@ bool GetOptions(Options &opt, int argc, char **argv)
 #ifdef VF3P
 	std::string optionstring = ":a:c:t:r:f:h:l:sukv";
 #else
-  std::string optionstring = ":r:f:suveF";
+	std::string optionstring = ":r:f:suveF";
 #endif
 
 	char option;
@@ -100,12 +107,18 @@ bool GetOptions(Options &opt, int argc, char **argv)
 				break;
 			case 'c':
 				opt.cpu = atoi(optarg);
+				if (opt.cpu >= 0) {
+					std::cout << "Note: CPU affinity with -c is deprecated with OpenMP.\n";
+					std::cout << "Use environment variables OMP_PROC_BIND and OMP_PLACES instead.\n";
+				}
 				break;
 			case 'k':
-				opt.lockFree=1;
+				opt.lockFree = 1;
 				break;
 			case 't':
 				opt.numOfThreads = atoi(optarg);
+				// Set OpenMP threads here
+				omp_set_num_threads(opt.numOfThreads);
 				break;
 			case 'h':
 				opt.ssrHighLimit = atoi(optarg);
@@ -114,16 +127,16 @@ bool GetOptions(Options &opt, int argc, char **argv)
 				opt.ssrLocalStackLimit = atoi(optarg);
 				break;
 #endif
-      		case 's':
+			case 's':
 				opt.storeSolutions = true;
 				break;
 			case 'r':
 				opt.repetitionTimeLimit = atof(optarg);
-       		 	break;
-			case 'e':
-				opt.edgeInduced = true; // solve the edge-induced subgraph isomorphism problem
 				break;
-      		case 'u':
+			case 'e':
+				opt.edgeInduced = true;
+				break;
+			case 'u':
 				opt.undirected = true;
 				break;
 			case 'v':
@@ -133,17 +146,17 @@ bool GetOptions(Options &opt, int argc, char **argv)
 				opt.format = std::string(optarg);
 				break;
 #ifndef VF3P
-            case 'F':
-                opt.firstOnly = true;
-                break;
+			case 'F':
+				opt.firstOnly = true;
+				break;
 #endif
-            case '?':
+			case '?':
 				PrintUsage();
 				return false;
 		}
-
 	}
-	//additional parameter
+
+	// Additional parameter check
 	if(argc < 2)
 	{
 		PrintUsage();
@@ -152,19 +165,35 @@ bool GetOptions(Options &opt, int argc, char **argv)
 
 	opt.pattern = argv[optind];
 	opt.target = argv[optind+1];
+
+#ifdef VF3P
+	// Print OpenMP configuration if verbose
+	if (opt.verbose) {
+		#pragma omp parallel
+		{
+			#pragma omp single
+			{
+				std::cout << "OpenMP Configuration:\n";
+				std::cout << "  Number of threads: " << omp_get_num_threads() << "\n";
+				std::cout << "  Max threads: " << omp_get_max_threads() << "\n";
+				std::cout << "  Nested parallelism: " << (omp_get_nested() ? "enabled" : "disabled") << "\n";
+			}
+		}
+	}
+#endif
+
 	return true;
 }
 
 template<typename Node, typename Edge>
 vflib::ARGLoader<Node, Edge>* CreateLoader(const Options& opt, std::istream &in)
 {
-
 	if(opt.format == "vf")
-  {
+	{
 		return new vflib::FastStreamARGLoader<Node, Edge>(in, opt.undirected);
-  }
+	}
 	else if(opt.format == "edge")
-  {
+	{
 		return new vflib::EdgeStreamARGLoader<Node, Edge>(in, opt.undirected);
 	}
 	else
@@ -179,18 +208,27 @@ vflib::MatchingEngine<state_t>* CreateMatchingEngine(const Options& opt)
 	switch(opt.algo)
 	{
 		case VF3PGSS:
-			return new vflib::ParallelMatchingEngine<state_t >(opt.numOfThreads, opt.storeSolutions, opt.lockFree, opt.cpu);
+			return new vflib::ParallelMatchingEngine<state_t>(
+				opt.numOfThreads,
+				opt.storeSolutions,
+				opt.lockFree,
+				opt.cpu);
 		case VF3PWLS:
-			return new vflib::ParallelMatchingEngineWLS<state_t >(opt.numOfThreads, opt.storeSolutions, opt.lockFree,
-                opt.cpu, opt.ssrHighLimit, opt.ssrLocalStackLimit);
+			return new vflib::ParallelMatchingEngineWLS<state_t>(
+				opt.numOfThreads,
+				opt.storeSolutions,
+				opt.lockFree,
+				opt.cpu,
+				opt.ssrHighLimit,
+				opt.ssrLocalStackLimit);
 		default:
-			std::cout<<"Wrong Algorithm Selected\n";
-			std::cout<<"1: VF3P with GSS Only\n";
-			std::cout<<"2: VF3P with Local Stack and limited depth\n";
+			std::cout << "Wrong Algorithm Selected\n";
+			std::cout << "1: VF3P with GSS Only\n";
+			std::cout << "2: VF3P with Local Stack and limited depth (GSS + LSS)\n";
 			return nullptr;
 	}
 #elif defined(VF3) || defined(VF3L)
-    return new vflib::MatchingEngine<state_t >(opt.storeSolutions, opt.edgeInduced);
+	return new vflib::MatchingEngine<state_t>(opt.storeSolutions, opt.edgeInduced);
 #endif
 }
 
